@@ -1,0 +1,138 @@
+ {% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MyDjango website</title>
+        <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <div class="container">
+                <h3>Portfolio >> Landing Page.</h3>
+                <p> This is a single page that shows who i am, what i do and what i can do if given the opportunity..</p>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                   <b><a class="nav-link active" href="#">Home</a></b> 
+                  </li>
+                  <li class="nav-item">
+                    <b><a class="nav-link" href="#">Blog</a></b>
+                  </li>
+                  <li class="nav-item">
+                    <b><a class="nav-link" href="#">Gallary</a></b>
+                  </li>
+                  <li class="nav-item">
+                    <form class="form-inline">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username">
+                        </div>    
+                      </form>
+                  </li>
+                </ul>
+              </div>
+              <hr>
+            <div class="row">
+                <div class="col-md-3 h-100 border-success">
+                    <div class="card card-body" id="profile-wrapper">
+                        <img id="profile-pic" src="{% static 'images/lilyphil.jpg' %}" >
+                        <hr>
+                        <h4>Hi! I am Macaulay Bright!</h4>
+                        <em><p>I love coding, writing and doing research works.</p></em>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="card card-body h-100 border-success">
+                        <h4>My First Job as a Developer</h4>
+                        <hr>
+                        <em><p>If they respect you, respect them
+                        If they disrespect you,still respect them...
+                        Do not allow the actions 
+                        of others to decrease your good manners because you represent yourself not others</p>
+
+                        <p>Man know thyself. TRUTH TO ONSELF IS TRUTH TO ALL</p></em>
+                        
+                        <ul class="social-links">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body h-100">
+                        <h5>My Experience as a Developer</h5>
+                        <hr>
+                        <em><p>Front End Developer at Industrial Technologies and Electric Design</p>
+                        <p>I designed, built and managed a the company's wewbsite
+                        with a UI for Inteltd and a customer dashboard.</p></em>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-body h-100">
+                        <h5>What I know</h5>
+                        <hr>
+                        <em><ul>
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>Html5 & css3</li>
+                            <li>Javascript</li>
+                        </ul></em>
+                        <b><p>PS: Working on Django, Flask, Postgresql and MongoDB.</p></b>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body">
+                        <h5>How I Learn</h5>
+                        <hr>
+                        <em><p>Watch online tutorials, take online courses, read PDFs and finally Practice codes</p></em>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-body h-100">
+                        <h2>Chat Messages</h2>
+
+                        <div class="container">
+                        <img class="chat-icon" src="{% static 'images/yy.jpg' %}" alt="Avatar" >
+                        <em><p>Hello. How are you today?</p></em>
+                        <span class="time-right">11:00</span>
+                        </div>
+
+                        <div class="container darker">
+                        <img class="chat-icon" src="{% static 'images/lilyphil.jpg' %}" alt="Avatar" class="right" >
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                        </div>
+
+                        <div class="container">
+                        <img class="chat-icon" src="{% static 'images/yy.jpg' %}" alt="Avatar" >
+                        <em><p>Sweet! So, what do you wanna do today?</p></em>
+                        <span class="time-right">11:02</span>
+                        </div>
+
+                        <div class="container darker">
+                        <img class="chat-icon" src="{% static 'images/lilyphil.jpg' %}" alt="Avatar" class="right" >
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
